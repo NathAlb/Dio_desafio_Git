@@ -1,0 +1,44 @@
+Comandos GIT
+Listar/ trazer as pastas em lista do diretorio atual - dir
+
+ls - listar os arquivos
+ls -a / listar arquivo oculto
+
+cd.. / volta 1 nivel
+
+Mudar de diretorio - cd (change diretor)
+
+mkdir / criar uma nova pasta
+
+echo / printa
+
+del / deleta arquivos 
+
+rmdir /- remover o repositório
+
+Objetos - blobs
+contém os metadados do objeto, tamonho, tipo etc - armazena os sha1
+
+Tree
+armazena e aponta os tipos de blobs e commits e nome, monta td a estrutura de onde estão os arquivos, pode apontar pra blobs ou outras arvores
+
+commit - junta tudo, aponta para uma arvore ou um parente (ultimo commit a ser criado antes dele), autor e mensagem
+tbm tem sha1
+
+SSH -conexão segura entre duas máquinas usando 2 chaves, uma privada e uma publica
+linha de codigo para gerar a chave SSH
+ssh-keygen -t ed25519 -C email@email.com
+
+dps de gerar a chave e cadastrar no git precisa configurar ela no git bash again
+eval $(ssh-agent -s)
+o codigo gera um agente que adiciona a maquina no git
+ssh-add id_ed25519
+
+git config --global user.email"email@email"
+git config --global user.name "nomedeusuario"
+
+git add*
+git commit -m "texto do commit"
+git status
+
+
